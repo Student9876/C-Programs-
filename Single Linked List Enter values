@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<malloc.h>
+struct node
+{
+	
+int info;
+	
+struct node *next;
+
+};
+typedef struct node ND;
+void main()
+{
+	
+ND *temp,*current,*start;
+int i;
+	
+start=NULL;
+for
+	(i=1;i<=5;i++)
+	
+{
+		
+temp=(ND*)malloc(sizeof(ND));
+		
+printf("\nEnter a integer value:");
+		scanf("%d",&temp->info);
+		
+if(start==NULL)
+			
+start=current=temp;
+		
+else
+		
+{
+			
+current->next=temp;
+			
+current=temp;	
+		
+}		
+	
+}
+	
+current->next=NULL;
+	
+printf("\nLINKED LIST ELEMENTS ARE:");
+	while(start!=NULL)
+{
+		
+printf("%d\t",start->info);
+		
+start=start->next;
+	
+}	
+}
