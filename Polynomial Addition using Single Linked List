@@ -1,4 +1,3 @@
-/* Program of polynomial addition using linked list */
 #include <stdio.h>
 #include <malloc.h>
 #include <conio.h>
